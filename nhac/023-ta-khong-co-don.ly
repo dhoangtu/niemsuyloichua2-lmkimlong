@@ -3,9 +3,9 @@
 \include "english.ly"
 
 \header {
-  title = "Ơn Cứu Độ - Ơn Nhưng Không"
+  title = "Ta Không Cô Đơn"
   poet = \markup \left-column {
-    "Ý lời ca: Từ một bài giảng"
+    "Ý lời ca: Từ một bài huấn giáo"
     "của Đức Phanxicô"
   }
   composer = "Lm. Kim Long"
@@ -16,64 +16,61 @@
 nhacPhanMot = \relative c' {
   \key f \major
   \time 2/4
-  \partial 4 f8 a |
-  d,8. d16 g8 g |
-  g4. f8 |
-  bf bf a16 (bf) g8 |
-  c4. bf8 |
-  bf d g, g |
-  c4. g8 |
-  g a d, d |
-  d4 d8 d |
-  c e g g |
-  f2 \bar "|."
+  \partial 4. f8 f f |
+  f4 d8 e |
+  e d d16 (e) c8 |
+  g'4 g8 g |
+  a4 bf8 bf |
+  a4 bf8 bf |
+  c e, g16 (a) c,8 |
+  f2 ~ |
+  f4 r8 \bar "|."
 }
 
 nhacPhanHai = \relative c' {
   \key f \major
   \time 2/4
-  f8 e e e |
-  g8. a16 g8 g16 (f) |
-  d8 e c c |
-  g'4 r8 bf |
-  bf a16 (bf) g8 g |
-  a8. g16 f (a) g (f) |
-  c8 g'16 g g8 e |
-  f4 \bar "||"
+  \partial 8 f8 |
+  f16 (a) g8 d d |
+  c4. f8 |
+  f e16 (f) d8 d |
+  g4. g8 |
+  a e e g |
+  c,4 r8 c |
+  c f f f |
+  d8. bf'16 g8 bf |
+  c2 ~ |
+  c8 \bar "||"
 }
 
 % Lời
 loiPhanMot = \lyricmode {
-  Ơn cứu độ là ơn nhưng không
-  là sáng kiến của tình yêu.
-  Không do giữ luật mà có, không do đã làm việc lành
-  nhưng do lòng yêu mến Chúa thôi.
+  Ta không cô đơn, nhưng có Chúa luôn ở cùng ta:
+  Cha nhân ái, Cha trên trời luôn thương mến và ở gần ta.
 }
 
 loiPhanHai = \lyricmode {
   <<
     {
       \set stanza = "1."
-      Thay vì phạt tội ta
-      Chúa sai Con Một xuống chuộc tội ta,
-      Lấy máu rửa sạch tội nhơ
-      khai mở con đường dẫn đến cõi trường sinh.
+      Hình ảnh cha mẹ gian trần cho ta cảm nghiệm tình thương
+      nhưng giới hạn và bất toàn.
+      Còn tình yêu Cha trên trời mãnh liệt kiên vững.
     }
     \new Lyrics {
 	    \set associatedVoice = "beSop"
 	    \set stanza = "2."
       \override Lyrics.LyricText.font-shape = #'italic
-      Ta được nhận là con, dẫu không công nghiệp,
-      không tài lực chi,
-      Sẽ lãnh sản nghiệp đời sau
-      nhưng chỉ do lòng Chúa ái tuất mà thôi.
+      Hình ảnh ân tình phu phụ cho ta hiểu được tình yêu
+      nhưng cách biệt thường hững hờ.
+      Còn tình yêu Cha trên trời không bờ không bến.
     }
     \new Lyrics {
 	    \set associatedVoice = "beSop"
 	    \set stanza = "3."
-      Khi cùng được hiệp thông với muôn muôn người khắp cả trần gian
-      Lãnh ơn cứu độ, ta hãy chăm chỉ
-      khẩn câu Chúa giáng phúc bình an.
+      Mẹ nhẫn tâm quên con mình chính nó mang nặng đẻ đau,
+      Ta cũng không hề khi nào đành lòng quên con
+      khi lòng vẫn hằng ưu ái.
     }
   >>
 }
@@ -105,7 +102,7 @@ loiPhanHai = \lyricmode {
     >>
   >>
   \layout {
-    \override Lyrics.LyricSpace.minimum-distance = #2
+    \override Lyrics.LyricSpace.minimum-distance = #1
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
@@ -124,7 +121,7 @@ loiPhanHai = \lyricmode {
   >>
   \layout {
     \override Staff.TimeSignature.transparent = ##t
-    \override Lyrics.LyricSpace.minimum-distance = #2
+    \override Lyrics.LyricSpace.minimum-distance = #1.5
     \override Score.BarNumber.break-visibility = ##(#f #f #f)
     \override Score.SpacingSpanner.uniform-stretching = ##t
     ragged-last = ##f
