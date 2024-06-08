@@ -4,7 +4,7 @@
 
 \header {
   title = "Chúa Khát Hay Ta Khát"
-  poet = "Ý loời ca: Ga 4, 7-15"
+  poet = "Ý lời ca: Ga 4, 7-15"
   composer = "Lm. Kim Long"
   tagline = ##f
 }
