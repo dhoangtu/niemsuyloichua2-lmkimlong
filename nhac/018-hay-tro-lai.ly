@@ -126,11 +126,7 @@ loiPhanBa = \lyricmode {
 }
 
 \score {
-  \new ChoirStaff \with {
-    \override StaffGrouper.staff-staff-spacing = #'(
-                            (basic-distance . 14)
-                            (padding . 1))
-  }
+  \new ChoirStaff
   <<
     \new Staff \with {
         printPartCombineTexts = ##f
